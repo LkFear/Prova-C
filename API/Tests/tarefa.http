@@ -1,0 +1,26 @@
+@base_url = https://localhost:7015/api/tarefa
+
+### Listar Tarefas ###
+GET {{base_url}}/listar
+
+### Criar Tarefa ###
+POST {{base_url}}/cadastrar
+Content-Type: application/json
+
+{
+  "Titulo": "Fazer a prova",
+  "Descricao": "1. Executar o desenvolvimento proprosto",
+  "CategoriaId": 2
+}
+
+### Alterar Status Tarefa ###
+PATCH {{base_url}}/alterar/2
+Content-Type: application/json
+
+### Alterar Status Tarefa ###
+GET {{base_url}}/naoconcluidas
+
+### Alterar Status Tarefa ###
+GET {{base_url}}/concluidas
+
+

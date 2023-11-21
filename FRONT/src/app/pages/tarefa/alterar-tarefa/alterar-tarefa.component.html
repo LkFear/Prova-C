@@ -1,0 +1,14 @@
+<h1>Modificar Status Tarefa</h1>
+
+<div>
+  <label>Selecione uma tarefa para alterar status:</label>
+  <select [(ngModel)]="tarefaId">
+    <option *ngFor="let t of tarefas" value="{{ t.tarefaId }}">
+      {{ t.titulo }}
+    </option>
+  </select>
+</div>
+<div>
+  <button (click)="alterarStatus()">Alterar Status</button>
+</div>
+
